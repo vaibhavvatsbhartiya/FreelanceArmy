@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* h1{
+    color: rgb(230, 16, 123);
+    text-align: center;
+    box-sizing: border-box;
+} */
+/* Our menu bar which contains  Home , Types of Freelancing , Course , Work , Contact Us and Any Suggestion or Feedback */
+.menu_bar{
+    background: rgb(224, 214, 61);
+    text-align: center;
+}
+.menu_bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+} 
+.menu_bar ul li{
+    width: 121px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu_bar ul li:hover
+{
+    background-color: #db298b;
+    border-radius: 10px;
+}
+
+/* here we use class named as "About-menu" for all sections in main menu which have - all (Home , Types of Freelancing , Course , Work , Contact Us and Any Suggestion or Feedback) sections in it . */
+
+/* Show menu for all section */
+.About-menu{
+    display: none;
+}
+.menu_bar ul li:hover .About-menu
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(228, 69, 148);
+    margin-top: 15px;
+    margin-left: 15px;
+} 
+/* Showing  all sub-section of main menu's  in vertical way in menu bar's About-menu*/
+.menu_bar ul li:hover .About-menu ul
+{
+    display: block;
+    margin: 10px;
+}
+/* Showing all sub-section  in vertical way with dotted white colour line under them in menu bar's About-menu. */
+.menu_bar ul li:hover .About-menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+/* Removing the dotted line under Team section of Sub menu of all section in menu bar's About-menu */
+.menu_bar ul li:hover .About-menu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu_bar ul li:hover .About-menu ul li a:hover
+{
+    color: rgb(0, 0, 0);
+}
+/* here we provide a BI1 only for first background image  */
+#BI1{
+    height: 100vh;
+    background-image: url(Images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    margin-left: -180vh;
+    margin-bottom: -13vh;
+} 
+.Header-Text{
+    font-size: 200%;
+    position: absolute;
+    bottom: 20%;
+    margin-left: 121px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.Header-Text{
+    text-align: center;
+    background: url(images/HometextBI.png);
+    -webkit-background-clip: text;
+    background-position: center ;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0 ;
+    }
+}
+.Header-Text .row{
+    font-size: 51%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.Header-Text a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.row a:hover{
+    background-color: skyblue;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* For Graphic and Design Drop down menu's Sub menu */
+.GDsub-menu{
+    display: none;
+    left: 81%;
+    top: -2.5%;
+}
+.menu_bar .About-menu ul li:hover .GDsub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(228, 69, 148);
+    margin-top: 15px;
+    margin-left: 15px;
+} 
+/* Showing  all sub-section of main menu's drop down's menus' GDsub-menu  in vertical way*/
+.menu_bar .About-menu ul li:hover .GDsub-menu ul
+{
+    display: block;
+    margin: 10px;
+}
+/* Showing all (sub-menu) sub-section  in vertical way with dotted white colour line under them in main menu's drop down's menus' GDsub-menu  */
+.menu_bar .About-menu ul li:hover .GDsub-menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+/* Removing the dotted line under Team section of Sub menu of all section in main menu's drop down's menus' GDsub-menu*/
+.menu_bar .About-menu ul li:hover .GDsub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu_bar .About-menu ul li:hover .GDsub-menu ul li a:hover
+{
+    color: rgb(0, 0, 0);
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* For Digital Marketing Drop down menu's Sub menu */
+.DMsub-menu{
+    display: none;
+    left: 81%;
+    top: 8.5%;
+}
+.menu_bar .About-menu ul li:hover .DMsub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(228, 69, 148);
+    margin-top: 15px;
+    margin-left: 15px;
+} 
+/* Showing  all sub-section of main menu's drop down's menus' DMsub-menu  in vertical way*/
+.menu_bar .About-menu ul li:hover .DMsub-menu ul
+{
+    display: block;
+    margin: 10px;
+}
+/* Showing all (sub-menu) sub-section  in vertical way with dotted white colour line under them in main menu's drop down's menus' DMsub-menu  */
+.menu_bar .About-menu ul li:hover .DMsub-menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+/* Removing the dotted line under Team section of Sub menu of all section in main menu's drop down's menus' DMsub-menu*/
+.menu_bar .About-menu ul li:hover .DMsub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu_bar .About-menu ul li:hover .DMsub-menu ul li a:hover
+{
+    color: rgb(0, 0, 0);
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* For Writing & Translation Drop down menu's Sub menu */
+.WTsub-menu{
+    display: none;
+    left: 81%;
+    top: 17.5%;
+}
+.menu_bar .About-menu ul li:hover .WTsub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(228, 69, 148);
+    margin-top: 15px;
+    margin-left: 15px;
+} 
+/* Showing  all sub-section of main menu's drop down's menus' WTsub-menu  in vertical way*/
+.menu_bar .About-menu ul li:hover .WTsub-menu ul
+{
+    display: block;
+    margin: 10px;
+}
+/* Showing all (sub-menu) sub-section  in vertical way with dotted white colour line under them in main menu's drop down's menus' WTsub-menu  */
+.menu_bar .About-menu ul li:hover .WTsub-menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+/* Removing the dotted line under Team section of Sub menu of all section in main menu's drop down's menus' WTsub-menu*/
+.menu_bar .About-menu ul li:hover .WTsub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu_bar .About-menu ul li:hover .WTsub-menu ul li a:hover
+{
+    color: rgb(0, 0, 0);
+}
+
+
